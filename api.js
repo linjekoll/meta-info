@@ -4,7 +4,7 @@ vehicle = {
   // What kind of event is this?_
   event:
     [
-      didLeaveStation,
+      did_leave_station,
       update,
       alert  
     ],
@@ -14,6 +14,8 @@ vehicle = {
   origin_station: 8998235,
   // Database id
   destination_station: 898345,
+  // Database id for the current station
+  station_id: 123123,
   // The arrival time at the destination. A Unix time stamp.
   time_to_arrival: 1235,
   // If the event is an alert event, this message contains information about the alert
