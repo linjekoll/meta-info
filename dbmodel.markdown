@@ -1,7 +1,7 @@
 # Databasmodell för Linjekoll
 
 ## stops
-- sid: int
+- sid: string
 - provider_id: int
 - coordinate: text [JSON]
 - name: string
