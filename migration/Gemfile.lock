@@ -19,7 +19,6 @@ GEM
     do_mysql (0.10.7)
       data_objects (= 0.10.7)
     jsonify (0.2.0)
-    mysql2 (0.3.7)
 
 PLATFORMS
   ruby
@@ -30,4 +29,3 @@ DEPENDENCIES
   dm-timestamps
   dm-validations
   jsonify
-  mysql2
