@@ -1,0 +1,8 @@
+source :gemcutter
+
+gem "dm-core"  
+gem "dm-validations"
+gem "dm-timestamps"
+gem "dm-mysql-adapter"
+gem "mysql2"
+gem "jsonify"
