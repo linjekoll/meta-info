@@ -19,7 +19,7 @@ end
 class LinesStop
   include DataMapper::Resource
   validates_presence_of :line_id, :stop_id
-  property :line_id, Integer
+  property :line_id, Integer, key: true
   property :stop_id, Integer
 end
 

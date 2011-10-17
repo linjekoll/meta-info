@@ -4,7 +4,6 @@ require "dm-core"
 require "dm-validations"
 require "dm-timestamps"
 require "dm-mysql-adapter"
-require "dm-serializer/to_json"
 require "yaml"
 require "./helpers"
 require "./models"
@@ -12,6 +11,8 @@ require "./models"
 database = YAML.load_file("config.yaml")
 DataMapper::Logger.new(STDOUT, :debug)
 DataMapper.setup(:default, "#{database["adapter"]}://#{database["username"]}:#{database["password"]}@#{database["host"]}:#{database["port"]}/#{database["database"]}")
+
+DataMapper.finalize
 
 # Delete everything
 [
@@ -22,16 +23,14 @@ DataMapper.setup(:default, "#{database["adapter"]}://#{database["username"]}:#{d
   User, 
   Stop, 
   TravelTime, 
-  LinesStop
+  LinesStop,
+  Position
 ].each(&:destroy)
 
-role = Role.create!({
-  name: "Administrator"
-})
 
 user = User.create!({
   name: "Jesper",
-  role_id: role.id
+  role_id: 1
 })
 
 provider = Provider.create!({
