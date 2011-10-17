@@ -1,1 +1,2 @@
 - Korrekta statuskoder för alla typer av requests, i skrivande stund `200`, `204` och `400`.
+- Ett externt dokumenterat REST-API.
