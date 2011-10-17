@@ -1,5 +1,4 @@
 # -*- encoding : utf-8 -*-
-require "mysql2"
 require "jsonify"
 require "dm-core"  
 require "dm-validations"
