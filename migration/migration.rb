@@ -49,7 +49,7 @@ line = LkLine.create!({
   provider_id: provider.id
 })
 
-position = 0
+position = 1
 stops = File.read("stops.js").from_json.map do |stop|
   item = Stop.create!({
     name: stop["name"],
@@ -57,8 +57,13 @@ stops = File.read("stops.js").from_json.map do |stop|
   
   LinesStop.create!({
     line_id: line.id,
+    stop_id: item.id
+  })
+  
+  Position.create!({
+    line_id: line.id,
     stop_id: item.id,
-    # position: position
+    position: position
   })
   
   position = position + 1

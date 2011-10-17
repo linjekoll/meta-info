@@ -63,7 +63,7 @@ end
 
 class Position
   include DataMapper::Resource
-  validates_presence_of :line_id, :stop_id
+  validates_presence_of :line_id, :stop_id, :position
   property :id, Serial
   property :line_id, Integer
   property :stop_id, Integer
