@@ -19,7 +19,6 @@ end
 class LinesStop
   include DataMapper::Resource
   validates_presence_of :line_id, :stop_id
-  # property :position, Integer
   property :line_id, Integer
   property :stop_id, Integer
 end
@@ -60,4 +59,13 @@ class VehicleType
   validates_presence_of :name
   property :id, Serial
   property :name, String
+end
+
+class Position
+  include DataMapper::Resource
+  validates_presence_of :line_id, :stop_id
+  property :id, Serial
+  property :line_id, Integer
+  property :stop_id, Integer
+  property :position, Integer
 end
