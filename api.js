@@ -2,6 +2,7 @@
 
 // GET /:api_key/providers/:provider_id/journeys/:journey_id
 
+// Valid events: "did_leave_station", "update", "alert"  
 vehicle = {
   // What kind of event is this?_
   event: "event",
