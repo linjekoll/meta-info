@@ -27,12 +27,6 @@ DataMapper.finalize
   Position
 ].each(&:destroy)
 
-
-user = User.create!({
-  name: "Jesper",
-  role_id: 1
-})
-
 provider = Provider.create!({
   name: "Västtrafik"
 })
@@ -44,7 +38,21 @@ vehicle = VehicleType.create!({
 line = LkLine.create!({
   vehicle_type_id: vehicle.id,
   name: "4",
-  provider_id: provider.id
+  provider_id: provider.id,
+  foreground_color: "#00ff00",
+  background_color: "#ffffff"
+})
+
+role = Role.create!({
+  name: "Admin"
+})
+
+user = User.create!({
+  name: "Jesper",
+  email: "jesper.josefsson@gmail.com",
+  password_hash: "M2qEG52qU7YLXbsiU4dCNFn8AVnEmyAd1O1VAbZFWwE7/dhCsWQ1qNSj+EK/I5+D",
+  role_id: role.id,
+  settings: "#{line.id}"
 })
 
 position = 1

@@ -25,10 +25,13 @@ end
 
 class User
   include DataMapper::Resource
-  validates_presence_of :role_id, :name
+  validates_presence_of :role_id, :name, :email, :password_hash, :settings
   property :id, Serial
   property :role_id, Integer
   property :name, String
+  property :email, String
+  property :password_hash, String
+  property :settings, String
 end
 
 class Provider
@@ -44,6 +47,8 @@ class LkLine
   property :id, Serial
   property :vehicle_type_id, Integer
   property :name, String
+  property :foreground_color, String
+  property :background_color, String
   property :provider_id, Integer
 end
 
