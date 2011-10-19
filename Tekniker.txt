@@ -1,7 +1,31 @@
 Beanstalk
+----------
+Används av: Facebook
+
+
 Redis
+------
+Vad: En key/value data store (alternativ till relationsdatabas). Hög läs- och skrivhastighet.
+Används av: 
+
 Websockets
+-----------
+Vad: Teknik för full duplex-kommunikation (samtidig kommunikation åt båda håll). 
+
 Eventmachine
+-------------
+Vad: Ruby-bibliotek för att...
+
 node.js
+--------
+Vad: Server side, eventbaserad JavaScript-miljö 
+
+
 backbone.js
+------------
+Vad: JavaScript-bibliotek för MVC-logik
+
+
 Raphael.js
+------------
+Vad: JavaScript-bibliotek för vektorgrafik
