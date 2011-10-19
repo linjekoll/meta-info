@@ -2,11 +2,10 @@ Beanstalk
 ----------
 Används av: Facebook
 
-
 Redis
 ------
 Vad: En key/value data store (alternativ till relationsdatabas). Hög läs- och skrivhastighet.
-Används av: 
+Används av: Github
 
 Websockets
 -----------
@@ -19,12 +18,12 @@ Vad: Ruby-bibliotek för att...
 node.js
 --------
 Vad: Server side, eventbaserad JavaScript-miljö 
-
+Används av: Yammer (socialt nätverk för företag, över 100 000 företag använder)
 
 backbone.js
 ------------
 Vad: JavaScript-bibliotek för MVC-logik
-
+Används av: SoundCloud (musikdistributionssida med över 5 miljoner användare)
 
 Raphael.js
 ------------
