@@ -1,0 +1,7 @@
+Beanstalk
+Redis
+Websockets
+Eventmachine
+node.js
+backbone.js
+Raphael.js
